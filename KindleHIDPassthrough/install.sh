@@ -20,8 +20,6 @@ tar -xzf "$TMPDIR/release.tar.gz" -C "$INSTALL_DIR"
 /usr/sbin/mntroot rw
 
 cp "$INSTALL_DIR/assets/hid-passthrough.upstart" /etc/upstart/hid-passthrough.conf
-cp "$INSTALL_DIR/assets/dev_is_keyboard.sh" /usr/local/bin/
-chmod +x /usr/local/bin/dev_is_keyboard.sh
 cp "$INSTALL_DIR/assets/99-hid-keyboard.rules" /etc/udev/rules.d/
 /usr/sbin/udevadm control --reload-rules
 
