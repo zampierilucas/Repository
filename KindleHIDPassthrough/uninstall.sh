@@ -16,7 +16,7 @@ APP_ID="com.lzampier.btmanager"
 
 rm -f /etc/upstart/hid-passthrough.conf
 rm -f /etc/udev/rules.d/99-hid-keyboard.rules
-rm -f /usr/local/bin/dev_is_keyboard.sh
+[ -f /usr/local/bin/dev_is_keyboard.sh ] && rm -f /usr/local/bin/dev_is_keyboard.sh
 /usr/sbin/udevadm control --reload-rules 2>/dev/null || true
 
 /usr/sbin/mntroot ro || true
