@@ -240,5 +240,14 @@
         "ABI": ["hf", "sf"],
         "dependencies": [],
         "tags": ["UTILITY"]
+    },
+    {
+        "name": "Kindle Button Mapper",
+        "uri": "KindleButtonMapper",
+        "description": "Map Controller and Keyboard Buttons to Reader Actions",
+        "author": "Lucas Zampieri",
+        "ABI": ["hf", "sf"],
+        "dependencies": [],
+        "tags": ["UTILITY"]
     }
 ]
